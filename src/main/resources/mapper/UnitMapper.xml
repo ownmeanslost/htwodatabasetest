@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.htwodatabasetest.unit.mapper.UnitMapper">
+  <resultMap id="BaseResultMap" type="com.example.htwodatabasetest.unit.model.UnitPO">
+    <id column="PKID" jdbcType="BIGINT" property="pkid" />
+    <result column="IS_DELETE" jdbcType="VARCHAR" property="isDelete" />
+    <result column="ADDED_TIME" jdbcType="TIMESTAMP" property="addedTime" />
+    <result column="ADDED_BY_CODE" jdbcType="VARCHAR" property="addedByCode" />
+    <result column="ADDED_BY_NAME" jdbcType="VARCHAR" property="addedByName" />
+    <result column="ADDED_BY_IP" jdbcType="VARCHAR" property="addedByIp" />
+    <result column="LAST_HANDLE_TIME" jdbcType="TIMESTAMP" property="lastHandleTime" />
+    <result column="LAST_MODIFIED_TIME" jdbcType="TIMESTAMP" property="lastModifiedTime" />
+    <result column="LAST_MODIFIED_BY_CODE" jdbcType="VARCHAR" property="lastModifiedByCode" />
+    <result column="LAST_MODIFIED_BY_NAME" jdbcType="VARCHAR" property="lastModifiedByName" />
+    <result column="LAST_MODIFIED_BY_IP" jdbcType="VARCHAR" property="lastModifiedByIp" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    PKID, IS_DELETE, ADDED_TIME, ADDED_BY_CODE, ADDED_BY_NAME, ADDED_BY_IP, LAST_HANDLE_TIME, 
+    LAST_MODIFIED_TIME, LAST_MODIFIED_BY_CODE, LAST_MODIFIED_BY_NAME, LAST_MODIFIED_BY_IP
+  </sql>
+
+  <select id="select1" resultType="com.example.htwodatabasetest.unit.model.UnitPO" parameterType="com.example.htwodatabasetest.unit.model.UnitPO">
+    select * from unit
+  </select>
+</mapper>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<!-- 数据库驱动 -->
+<!--	<classPathEntry location="D:\maven_repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar" />-->
+	<context id="DB2Tables" targetRuntime="MyBatis3" defaultModelType="flat">
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<plugin type="com.easy.mybatis.common.mbg.plugin.MyBatisGeneratorPlugin" />
+
+		<commentGenerator type="com.easy.mybatis.common.mbg.plugin.FiledCommentGenerator">
+			<property name="suppressDate" value="true" />
+			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<!--数据库链接URL，用户名、密码 -->
+		<jdbcConnection driverClass="org.h2.Driver" connectionURL="jdbc:h2:~/H2DB/h2test"
+						userId="sa" password="sa">
+
+			<!-- oracle数据库 提供po字段注释 <property name="remarksReporting" value="true"></property> -->
+
+			<!-- mysql数据库 提供po字段注释 -->
+			<property name="useInformationSchema" value="true"></property>
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- 生成的po模型文件位置 -->
+		<javaModelGenerator targetPackage="com.example.htwodatabasetest.generator" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!-- 生成的mapper xml文件位置 -->
+		<sqlMapGenerator targetPackage="com.example.htwodatabasetest.generator" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!-- 生成的mapper dao接口文件位置 -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.example.htwodatabasetest.generator" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<table tableName="unit" mapperName="UnitDao" domainObjectName="UnitPO">
+			<!-- 指定主键和增长方式 -->
+			<generatedKey column="pkid" sqlStatement="mysql" identity="true" />
+			<!-- 忽略列字段前缀 -->
+			<!--		<columnRenamingRule searchString="^" replaceString="" />-->
+		</table>
+	</context>
+</generatorConfiguration>

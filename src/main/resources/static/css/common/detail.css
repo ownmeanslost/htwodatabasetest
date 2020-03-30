@@ -1,0 +1,413 @@
+@charset "UTF-8";
+/*通用*/
+/* CSS Document */
+.form-horizontal .has-feedback .form-control-feedback {
+    top: 0;
+}
+
+body .form-control[disabled], fieldset[disabled] .form-control {
+    /*cursor: text;*/
+    background-color: #f7f7f7;
+    opacity: 1;
+}
+
+.form-control[readonly] {
+    /*cursor: text;*/
+    background-color: transparent;
+    opacity: 1;
+}
+
+label.error {
+    display: block;
+    font-weight: normal;
+    cursor: text;
+    margin-top: 5px;
+    color: #f04134;
+}
+
+label.remember {
+    line-height: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+    display: inline-block !important;
+}
+
+label.accept {
+    line-height: 20px;
+    font-weight: normal;
+    display: block;
+}
+
+label.accept > span {
+    color: #333;
+    cursor: text;
+}
+
+label.control-label {
+    color: #666;
+}
+
+.form-horizontal .control-label.accept {
+    padding-top: 0;
+    text-align: left;
+}
+
+#vemail {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+    color: #f04134;
+}
+
+.form-control-feedback {
+    position: absolute;
+    font-size: 16px;
+    top: 0;
+    right: 5px;
+    z-index: 2;
+    display: block;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.icon-checkcircle {
+    color: #00a854;
+}
+
+.icon-closecircle {
+    color: #f04134;
+}
+
+.has-error .control-label .form-control {
+    border-color: #f04134;
+}
+
+.has-error .control-label .form-control:hover {
+    border-color: #f04134 !important;
+}
+
+.box-detail {
+    margin: 10px 0;
+}
+
+.box-detail table {
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+}
+
+.box-detail table th,
+.box-detail table td {
+    height: 36px;
+    border: 1px solid #e5e5e5;
+}
+
+.box-detail table th {
+    font-weight: normal;
+    background: #fcfcfc;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.box-detail table td {
+    padding: 0 20px 0 10px;
+}
+
+.box-detail table td input {
+    width: 100%;
+}
+
+.box-detail table td .group .scm-input-wrap {
+    width: 100%;
+}
+
+.box-detail table td .group .select-search {
+    display: none;
+    left: 0;
+    min-width: 100%;
+}
+
+.title {
+    margin: 10px;
+}
+
+.title .title-infor {
+    overflow: hidden;
+}
+
+.title .title-infor h2 {
+    float: left;
+    line-height: 30px;
+    color: #333;
+}
+
+.title .title-infor .title-power {
+    float: right;
+    font-size: 12px;
+}
+
+.title .title-infor .title-power li {
+    float: left;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background: #999;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+
+.title .title-infor .title-power li i {
+    font-size: 18px;
+}
+
+.title .title-infor .title-power li.red {
+    background: #ff2724;
+    border-color: #ff2724;
+}
+
+.title .title-infor .title-power li.blue {
+    background: #31f08d;
+    border-color: #31f08d;
+}
+
+.title .title-infor .title-power li.car {
+    background: #fff;
+    color: #999;
+}
+
+.title .title-infor .title-power li.car.red {
+    background: #fff;
+    color: #ff2724;
+}
+
+.title .title-price {
+    font-size: 14px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.tab .scm-add {
+    float: right;
+}
+
+.conditionbtn-bottom {
+    float: right;
+    margin: 0 10px 10px;
+}
+
+/*editorTable-cont*/
+.editorTable-cont {
+    padding: 10px;
+}
+
+.editorTable-cont .editorTable-import {
+    margin-top: 20px;
+}
+
+.editorTable-cont .editorTable-btn {
+    padding: 0 15px;
+}
+
+.editorTable-cont .form-list .group {
+    width: 33%;
+}
+
+.editorTable-cont .form-list .group label {
+    width: 70px;
+}
+
+.editorTable-cont .form-list .group .scm-input-wrap {
+    width: calc(100% - 78px);
+}
+
+.editorTable-cont .form-list .group.group-select ul {
+    left: 75px;
+}
+
+.editorTable-cont .totle {
+    height: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.voucher-view {
+    padding: 10px;
+    background: #fff;
+    margin: 0 10px;
+    /*margin-left: -10px;*/
+    height: 100%;
+    overflow: auto;
+    text-align: left;
+}
+
+.voucher-view dl {
+    /*float: left;*/
+    display: inline-block;
+    /*margin-left: 20px;*/
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.voucher-view dl dt {
+    /*display: inline-block;*/
+}
+
+.voucher-view dl dt img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.voucher-view dl dd {
+    /*display: inline-block;*/
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+}
+
+.licenseCont {
+    padding: 5px 20px 10px;
+}
+
+.licenseCont ul {
+    margin-left: -20px;
+}
+
+.licenseCont ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+.licenseCont ul li .title {
+    text-align: center;
+}
+
+.licenseCont ul li .licenseImg {
+    width: 145px;
+    height: 145px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.licenseCont ul li .licenseImg img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.licenseCont ul li .licenseImg:after {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.licenseCont ul li .licenseContOperate {
+    margin: 8px 0;
+}
+
+.licenseCont ul li .licenseContOperate a {
+    color: #5480F1;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.licenseCont ul li .licenseContOperate a:first-child {
+    margin-left: 0;
+}
+
+.licenseCont ul li .licenseContOperate a:hover {
+    text-decoration: underline;
+}
+
+.licenseCont ul li .licenseContOperate a > input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    padding: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.licenseCont ul li .endDate {
+    margin-top: 7px;
+}
+
+.licenseCont ul li .endDate > label {
+    width: auto;
+}
+
+.licenseCont ul li .endDate .calendar-date {
+    display: inline-block;
+    position: relative;
+    width: calc(145px - 30px);
+}
+
+.changePriceBatchCont {
+    padding: 10px 20px;
+}
+
+.changePriceBatchCont .changePriceBatchList {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+}
+
+.changePriceBatchCont .changePriceBatchList:last-child {
+    margin-bottom: 0;
+}
+
+.changePriceBatchCont .changePriceBatchList h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 0 3px;
+}
+
+.changePriceBatchCont .changePriceBatchList .changePriceBatchContent {
+    padding: 3px 17px;
+    max-height: 167px;
+    overflow: auto;
+}
+
+.changePriceBatchCont .changePriceBatchList .changePriceBatchContent .group {
+    margin-top: 10px;
+}
+
+.changePriceBatchCont .changePriceBatchList .changePriceBatchContent .group:first-child {
+    margin-top: 0;
+}
+
+.changePriceBatchCont .changePriceBatchList .changePriceBatchContent .group .scm-input-wrap {
+    width: 150px;
+}
+
+.changePriceBatchCont .changePriceBatchList .changePriceBatchContent .group.selectionBox > label {
+    width: 170px !important;
+}
+
+.changePriceBatchCont .changePriceBatchList .changePriceBatchContent .selectionBox > label {
+    min-width: 100px;
+    /*width:100px!important;*/
+    text-align: left;
+}
